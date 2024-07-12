@@ -12,7 +12,7 @@ Date-fns: Library for date manipulation ,Side bar creation , Icons used
 npm install 
 for execution of project  use ## npm run dev
 Open http://localhost:3000 to view it in the browser.
-
+## for open Sidebar just cliclk on 3line bar and sidebar will be displayed
 ## on sidebar there are options that all are navigate to that perticular page whenever we click on that 
 ## ex.Payments  If we click on payments we directs to Payment page and that is the main page  all data will display on Payments Page
 
