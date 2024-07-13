@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import 'tailwindcss/tailwind.css';
+
 import Sidebar from "../Components/Sidebar"
 import Navbar from '../Components/Navbar';
 

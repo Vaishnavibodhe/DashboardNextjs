@@ -1,4 +1,6 @@
 "use client"
+import 'tailwindcss/tailwind.css';
+import '../globals.css';
 import React, { useState } from 'react';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import recentOrderData from './recentOrders';
@@ -125,17 +127,17 @@ const Payments = () => {
           <div className="hidden md:flex border-b border-gray-200 py-2">
             <div className="w-1/7 px-4">Order Id</div>
             <div className="w-1/7 px-2">Product ID</div>
-            <div className="w-1/7 px-2">Customer Name</div>
-            <div className="w-1/7 px-2">Order Date</div>
+            <div className="w-1/7 px-2 ml-8">Customer Name</div>
+            <div className="w-1/7 px-2 ml-4">Order Date</div>
             <div className="w-1/7 px-10">Order Total</div>
             <div className="w-1/7 px-2">Shipping Address</div>
-            <div className="w-1/7 px-2">Order Status</div>
+            <div className="w-1/7 px-2 ml-4">Order Status</div>
           </div>
 
 
           {orderData.map((order) => (
             <div key={order.id} className="flex flex-col md:flex-row border-b border-gray-200 py-2">
-              <div className="w-full md:w-1/7 px-4 mb-2 md:mb-0">
+              <div className="w-full md:w-1/7 mb-2 md:mb-0">
                 <Link href={`/order/${order.id}`}>
                   <span className="text-blue-500"># {order.id}</span>
                 </Link>
@@ -145,12 +147,12 @@ const Payments = () => {
                   <span className="text-blue-500"># {order.product_id}</span>
                 </Link>
               </div>
-              <div className="w-full md:w-1/7 px-2 mb-2 md:mb-0">
+              <div className="w-full md:w-1/7  mb-2 md:mb-0">
                 <Link href={`/customer/${order.customer_id}`}>
                   <span>{order.customer_name}</span>
                 </Link>
               </div>
-              <div className="w-full md:w-1/7 px-2 mb-2 md:mb-0">
+              <div className="w-full md:w-1/7 px-1 mb-2 md:mb-0">
                 {format(new Date(order.order_date), 'dd MMM yyyy')}
               </div>
               <div className="w-full md:w-1/7 px-10 mb-2 md:mb-0">
