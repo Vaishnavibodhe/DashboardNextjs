@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/audience/page": "/audience",
+  "/orders/page": "/orders",
+  "/marketing/page": "/marketing",
+  "/delivery/page": "/delivery",
+  "/payments/page": "/payments",
+  "/page": "/",
+  "/discount/page": "/discount"
+}
